@@ -24,7 +24,7 @@ interface PlayerFilter extends SortBase {
     key: "playerFilter";
 }
 
-export type TableSort = 
+export type TableSort =
     TotalRushingYdsSort |
     LongestRushSort |
     TotalRushingTDSort |

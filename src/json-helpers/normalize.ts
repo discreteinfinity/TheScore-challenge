@@ -5,11 +5,11 @@ import { Lng, NormalizedMaybe, PlayerJSON, NormalizedError } from "./types";
 
 export default function normalizePlayerRushingStats(json: PlayerJSON): NormalizedMaybe {
     const createError = (
-        key: string, 
+        key: string,
         type: string
     ): NormalizedError => ({
         key: "error",
-        json, 
+        json,
         msg:`${key} must be of type ${type}`
     });
 

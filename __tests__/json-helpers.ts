@@ -109,7 +109,7 @@ describe("normalizePlayerRushingStats", () => {
         ).toStrictEqual({
             key: "ok",
             stats: cleanJSON
-        });   
+        });
     });
 
     test("Player Errors", () => {
@@ -170,7 +170,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     att: val,
                 }
-            });    
+            });
         }
     });
     
@@ -197,14 +197,14 @@ describe("normalizePlayerRushingStats", () => {
                     "Att/G": val,
                 })
             ).toStrictEqual({
-                key: "ok",    
+                key: "ok",
                 stats: {
                     ...cleanJSON,
                     attG: val,
                 }
-            });   
+            });
         }
-    });    
+    });
 
     test("Att/G Errors", () => {
         const json = {
@@ -260,7 +260,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     yds: val,
                 }
-            });   
+            });
         }
     });
 
@@ -305,7 +305,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     avg: val,
                 }
-            });   
+            });
         }
     });
 
@@ -337,7 +337,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     ydsG: val,
                 }
-            });   
+            });
         }
     });
 
@@ -369,7 +369,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     td: val,
                 }
-            });   
+            });
         }
     });
 
@@ -401,7 +401,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     lng: `${val}`,
                 }
-            });  
+            });
         }
     });
 
@@ -446,7 +446,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     first: val,
                 }
-            });   
+            });
         }
     });
 
@@ -478,7 +478,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     firstPercentage: val,
                 }
-            });   
+            });
         }
     });
 
@@ -510,7 +510,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     twentyPlus: val,
                 }
-            });   
+            });
         }
     });
 
@@ -542,7 +542,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     fortyPlus: val,
                 }
-            });   
+            });
         }
     });
 
@@ -574,7 +574,7 @@ describe("normalizePlayerRushingStats", () => {
                     ...cleanJSON,
                     fum: val,
                 }
-            });   
+            });
         }
     });
 

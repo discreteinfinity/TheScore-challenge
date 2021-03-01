@@ -8,6 +8,8 @@
     "test": "npx jest",
     "clean": "rm -rf build",
     "uninstall": "rm -rf node_modules",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
     "start": "npx webpack serve",
     "docker:build": "docker build -t nfl-rushing . ",
     "docker:start": "docker run --name TheScoreChallenge -p 3000:3000 nfl-rushing",

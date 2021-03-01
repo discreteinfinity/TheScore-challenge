@@ -20,7 +20,7 @@ export interface RushingStatsBase {
 export type RushingStatsKeys = keyof RushingStatsBase;
 export interface RushingStats extends RushingStatsBase {
     [key: string]: RushingStatsBase[keyof RushingStatsBase];
-} 
+}
 
 export interface InvalidJSON {
     json: PlayerJSON;
