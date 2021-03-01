@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.App {
+    margin: 10px;
+    padding: 10px;
+}
+
+.Table-Container {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 325px;
+    max-width: 95vw;
+    max-height: 95vh;
+
+    overflow: scroll;
+    padding: 5px;
+}
+
+.Table {
+    background-color: blanchedalmond;
+    
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Cell {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+
+    background-color: blanchedalmond;
+
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+.Filter {
+    top: 0;
+    left: 0;
+    margin-left: 80px;
+}
+
+.Download {
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.Label {
+    width: 200px;
+    height: 20px;
+    color: blanchedalmond;
+}
+
+.Control {
+    position: relative;
+    width: 250px;
+}

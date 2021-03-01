@@ -1,0 +1,21 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+
+    "include": ["./src/UI/index.tsx", "webpack.config.ts", "__tests__"],
+    "exclude": ["node_modules"],
+
+    "compilerOptions": {
+        "outDir": "./build/",
+        "target": "es5",
+        "lib": [
+            "ES2019.Object",
+            "ES2019.Array",
+            "DOM"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "jsx": "react"
+    }
+}

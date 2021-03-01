@@ -1,0 +1,75 @@
+{
+  "name": "nfl-rushing",
+  "version": "1.0.0",
+  "description": "TheScore Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack",
+    "test": "npx jest",
+    "clean": "rm -rf build",
+    "uninstall": "rm -rf node_modules",
+    "start": "npx webpack serve",
+    "docker:build": "docker build -t nfl-rushing . ",
+    "docker:start": "docker run --name TheScoreChallenge -p 3000:3000 nfl-rushing",
+    "docker": "npm run docker:build && npm run docker:start",
+    "docker:remove": "docker rm TheScoreChallenge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsicareers/nfl-rushing.git"
+  },
+  "author": "Christian Mutikainen",
+  "license": "TheScore",
+  "bugs": {
+    "url": "https://github.com/tsicareers/nfl-rushing/issues"
+  },
+  "homepage": "https://github.com/tsicareers/nfl-rushing#readme",
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/file-saver": "^2.0.1",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/webpack": "^4.41.26",
+    "@types/webpack-dev-server": "^3.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.21.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1",
+    "ts-loader": "^8.0.17",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+      "no-trailing-spaces": ["error", { "skipBlankLines": true }]
+    },
+    "ignorePatterns": [
+      "*.js"
+    ]
+  }
+}
